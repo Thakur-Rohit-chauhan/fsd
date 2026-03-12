@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <div class="top">
+        <h1>Admin Panel</h1>
+        <button id="logoutBtn" type="button">Logout</button>
+      </div>
+
+      <form id="assignmentForm">
+        <h2>Create Assignment</h2>
+        <input id="title" type="text" placeholder="Title" required minlength="3" />
+        <input id="course" type="text" placeholder="Course" required minlength="2" />
+        <input id="due_date" type="date" required />
+        <textarea id="description" placeholder="Description" required minlength="5"></textarea>
+        <button type="submit">Create Assignment</button>
+      </form>
+
+      <button id="loadAssignments" type="button">View Assignments</button>
+      <ul id="assignmentsList"></ul>
+
+      <button id="loadSubmissions" type="button">View Submissions</button>
+      <ul id="submissionsList"></ul>
+      <p id="message" class="message"></p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

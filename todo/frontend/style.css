@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+.card {
+  width: min(94vw, 760px);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  background: #111827;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.assignment-card,
+.assignment-box {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f9fafb;
+}
+
+.assignment-card h3,
+.assignment-box h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.assignment-meta {
+  margin: 4px 0;
+  color: #374151;
+}
+
+.assignment-description {
+  margin: 8px 0 12px;
+  color: #111827;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+li {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 120px 90px;
+  gap: 8px;
+  align-items: center;
+}
+
+.message {
+  min-height: 20px;
+  margin: 8px 0 0;
+  font-size: 14px;
+}

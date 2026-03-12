@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Panel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <div class="top">
+        <h1>Student Panel</h1>
+        <button id="logoutBtn" type="button">Logout</button>
+      </div>
+
+      <h2>Available Assignments</h2>
+      <div id="assignmentsCards" class="cards"></div>
+
+      <button id="loadMySubmissions" type="button">Track Status</button>
+      <ul id="statusList"></ul>
+      <p id="message" class="message"></p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
